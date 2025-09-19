@@ -1,11 +1,14 @@
 .navbar
 {
-    background-color: #551682;
+    background-color: #6b3697;
     overflow: hidden;
     padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
 
 .navbar-links {
