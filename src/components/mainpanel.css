@@ -1,0 +1,65 @@
+.mainpanel {
+    background: #fff;
+    min-height: 80vh;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainpanel h2 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.mainpanel p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 24px;
+}
+
+.mainpanel form {
+    margin-bottom: 24px;
+}
+
+.mainpanel label {
+    display: block;
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.mainpanel input[type="radio"] {
+    margin-right: 10px;
+}
+
+.mainpanel button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    margin: 0 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.mainpanel button:disabled {
+    background: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.mainpanel button:hover:not(:disabled) {
+    background: #1976d2;
+}
+
+.navigation-buttons {
+    margin-top: auto;
+    display: flex;
+    padding-bottom: 16px;
+}

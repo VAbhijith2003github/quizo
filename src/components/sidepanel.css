@@ -1,0 +1,125 @@
+.sidepanel {
+  width: 400px;
+  height: 100%;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  font-size: 20px;
+}
+
+.question-list {
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.question-bubble-unopened {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.question-bubble-unattempted {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.question-bubble-attempted {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.question-bubble-marked-for-review {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background: rgba(255, 165, 0, 0.5);
+}
+
+.question-bubble-answered-and-marked-for-review {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.status {
+  height: 50%;
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.question-bubble-status {
+  width: 60px;
+  height: 70px;
+  border-radius: 10%;
+  background: #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px;
+  font-size: 0.8rem;
+}
+
+#unattempted {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+#answered-and-marked-for-review {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+#attempted {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+#marked-for-review {
+  background: rgba(255, 165, 0, 0.5);
+}
+
+.status h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.question-container {
+  height: 60%;
+  overflow-y: auto;
+}
