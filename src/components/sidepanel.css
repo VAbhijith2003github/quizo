@@ -1,7 +1,10 @@
 .sidepanel {
-  width: 400px;
+  max-width: 360px;
+  width: 26%;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
   position: fixed;
   top: 50px;
   right: 0px;
@@ -33,7 +36,6 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -46,7 +48,6 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -86,8 +87,8 @@
 }
 
 .question-bubble-status {
-  width: 60px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 10%;
   background: #ccc;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -95,9 +96,19 @@
   align-items: center;
   justify-content: center;
   margin: 10px 20px;
-  font-size: 0.8rem;
 }
 
+.status-bar-text {
+  font-size: 10px !important;
+}
+
+@media screen and (max-width: 1250px) {
+  .question-bubble-status {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 10px !important;
+  }
+}
 #unattempted {
   background: rgba(255, 0, 0, 0.5);
 }

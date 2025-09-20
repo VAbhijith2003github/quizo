@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./mainpanel.css";
 
-const MainPanel = ({ questions, setQuestions }) => {
-  const [current, setCurrent] = useState(0);
-
+const MainPanel = ({ questions, setQuestions, current, setCurrent, handlesubmit }) => {
   const handleRev = () => {
     const optionselectedornot = questions[current].chosenOption;
     if(optionselectedornot){
@@ -63,14 +61,6 @@ const MainPanel = ({ questions, setQuestions }) => {
     if (current > 0) setCurrent(current - 1);
   };
 
-  const handleSubmit = () => {
-    const updatedQuestions = questions.map((q, idx) =>
-      idx === current ? { ...q, statusOfQuestion: "attempted" } : q
-    );
-    handleNext();
-    setQuestions(updatedQuestions);
-  };
-
   return (
     <div className="mainpanel">
       <div className="question" key={questions[current].qno}>
@@ -100,15 +90,15 @@ const MainPanel = ({ questions, setQuestions }) => {
         <button type="button" onClick={handlePrev} disabled={current === 0}>
           Prev
         </button>
-        <button type="button" onClick={handleSubmit}>
-          Submit
-        </button>
         <button
           type="button"
           onClick={handleNext}
           disabled={current === questions.length - 1}
         >
           Next
+        </button>
+        <button type="button" className="submit-button" onClick={handlesubmit}>
+          Submit
         </button>
       </div>
     </div>
