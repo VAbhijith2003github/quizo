@@ -4123,4 +4123,20 @@ const answerKey = [
   "A",
 ];
 
-export { initialQuestions, answerKey };
+const test = {
+  Id: 1,
+  name: "NTA UGC NET sample paper 1",
+  questions: initialQuestions,
+  answerKey: answerKey,
+  time_stamp: null,
+  time_duration: 3 * 60 * 60,
+  result: {
+    score: 0,
+    total: initialQuestions.length,
+    correct: 0,
+    incorrect: 0,
+    unattempted: initialQuestions.length,
+  },
+};
+
+export default test;

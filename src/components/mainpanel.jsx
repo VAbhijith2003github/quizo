@@ -4,60 +4,66 @@ import "./mainpanel.css";
 const MainPanel = ({ questions, setQuestions, current, setCurrent, handlesubmit }) => {
   const handleRev = () => {
     const optionselectedornot = questions[current].chosenOption;
-    if(optionselectedornot){
-      const updatedQuestions = questions.map((q, idx) =>
-        idx === current
-          ? { ...q, statusOfQuestion: "answered-and-marked-for-review" }
-          : q
-      );
+    const updatedQuestions = [...questions];
+    if (optionselectedornot) {
+      updatedQuestions[current] = {
+        ...updatedQuestions[current],
+        statusOfQuestion: "answered-and-marked-for-review",
+      };
+    } else {
+      updatedQuestions[current] = {
+        ...updatedQuestions[current],
+        statusOfQuestion: "marked-for-review",
+      };
+    }
     setQuestions(updatedQuestions);
-  } else {
-    const updatedQuestions = questions.map((q, idx) =>
-      idx === current
-        ? { ...q, statusOfQuestion: "marked-for-review" }
-        : q
-      );
-    setQuestions(updatedQuestions);
-  }
   };
 
   const handleOptionChange = (e) => {
     const chosen = e.target.value;
-    const currentoption = questions[current].chosenOption;
-    if (currentoption === chosen) {
-      const updatedQuestions = questions.map((q, idx) =>
-        idx === current
-          ? { ...q, chosenOption: null, statusOfQuestion: "unattempted" }
-          : q
-      );
+    const updatedQuestions = [...questions];
+    if (updatedQuestions[current].chosenOption === chosen) {
+      updatedQuestions[current] = {
+        ...updatedQuestions[current],
+        chosenOption: null,
+        statusOfQuestion: "unattempted",
+      };
       setQuestions(updatedQuestions);
       return;
     }
-    const updatedQuestions = questions.map((q, idx) =>
-      idx === current
-        ? { ...q, chosenOption: e.target.value, statusOfQuestion: "attempted" }
-        : q
-    );
+    updatedQuestions[current] = {
+      ...updatedQuestions[current],
+      chosenOption: chosen,
+      statusOfQuestion: "attempted",
+    };
     setQuestions(updatedQuestions);
   };
 
   const handleNext = () => {
-    const updatedQuestions = questions.map((q, idx) =>
-      idx === current && q.statusOfQuestion === "unopened"
-        ? { ...q, statusOfQuestion: "unattempted" }
-        : q
-    );
-    setQuestions(updatedQuestions);
+    const updatedQuestions = [...questions];
+    if (updatedQuestions[current].statusOfQuestion === "unopened") {
+      updatedQuestions[current] = {
+        ...updatedQuestions[current],
+        statusOfQuestion: "unattempted",
+      };
+      setQuestions(updatedQuestions);
+    } else {
+      setQuestions(updatedQuestions);
+    }
     if (current < questions.length - 1) setCurrent(current + 1);
   };
 
   const handlePrev = () => {
-    const updatedQuestions = questions.map((q, idx) =>
-      idx === current && q.statusOfQuestion === "unopened"
-        ? { ...q, statusOfQuestion: "unattempted" }
-        : q
-    );
-    setQuestions(updatedQuestions);
+    const updatedQuestions = [...questions];
+    if (updatedQuestions[current].statusOfQuestion === "unopened") {
+      updatedQuestions[current] = {
+        ...updatedQuestions[current],
+        statusOfQuestion: "unattempted",
+      };
+      setQuestions(updatedQuestions);
+    } else {
+      setQuestions(updatedQuestions);
+    }
     if (current > 0) setCurrent(current - 1);
   };
 
@@ -76,6 +82,7 @@ const MainPanel = ({ questions, setQuestions, current, setCurrent, handlesubmit 
                   value={option.key}
                   checked={questions[current].chosenOption === option.key}
                   onClick={handleOptionChange}
+                  onChange={handleOptionChange}
                 />
                 {option.key}: {option.value}
               </label>

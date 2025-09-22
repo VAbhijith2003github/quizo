@@ -17,13 +17,14 @@ const Sidepanel = ({ questions, setQuestions, current, setCurrent }) => {
     if(qno-1 === current) return;
     const optionselectedornot = questions[current].chosenOption;
     if (!optionselectedornot) {
-      setQuestions((prevQuestions) =>
-        prevQuestions.map((question, index) =>
-          index === current
-            ? { ...question, statusOfQuestion: "unattempted" }
-            : question
-        )
-      );
+      setQuestions((prevQuestions) => {
+      const updatedQuestions = [...prevQuestions];
+      updatedQuestions[current] = {
+        ...updatedQuestions[current],
+        statusOfQuestion: "unattempted",
+      };
+      return updatedQuestions;
+      });
     }
     setCurrent(qno - 1);
   };

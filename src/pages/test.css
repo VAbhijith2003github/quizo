@@ -11,10 +11,84 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #333;
-  padding: 10px 10vw 10px 0px;
+  padding: 20px 10vw 10px 0px;
   text-align: right;
   width: 70vw;
   position: sticky !important;
   top: 40px !important;
   background-color: #e2eaf4;
+}
+
+.start-page {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f9f9fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+}
+
+.start-page h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1976d2;
+  letter-spacing: 1px;
+}
+
+.start-page h2 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.start-page ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.start-page ul li {
+  margin-bottom: 8px;
+  font-size: 1.08em;
+  background: #e3eafc;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.start-page ol {
+  margin-left: 18px;
+  margin-bottom: 18px;
+}
+
+.start-page ol li {
+  margin-bottom: 8px;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.start-page button {
+  margin-top: 24px;
+  font-size: 1.1em;
+  padding: 12px 36px;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.12);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  align-self: flex-end;
+}
+
+.start-page button:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
 }

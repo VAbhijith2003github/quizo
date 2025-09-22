@@ -2,38 +2,71 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import MainPanel from "../components/mainpanel";
 import Sidepanel from "../components/sidepanel";
-import { PieChart } from '@mui/x-charts/PieChart';
-import { initialQuestions, answerKey } from "../paper";
+import { PieChart } from "@mui/x-charts/PieChart";
+import test from "../paper";
 import "./test.css";
 import $ from "jquery";
 
 function Test() {
-  const [questions, setQuestions] = useState(initialQuestions);
-  const [timeLeft, setTimeLeft] = useState(3*60* 60);
+  const [started, setStarted] = useState(false);
+  const answerKey = test.answerKey;
+  test.time_stamp = new Date().toLocaleString();
+  const [questions, setQuestions] = useState(test.questions);
+  const [timeLeft, setTimeLeft] = useState(test.time_duration);
+  const [result, setResult] = useState(test.result);
   const [current, setCurrent] = useState(0);
-  const [result, setResult] = useState({
-    score: 0,
-    total: questions.length,
-    correct: 0,
-    incorrect: 0,
-    unattempted: questions.length,
-  });
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    if (timeLeft === 0) {
-      handlesubmit();
-      return;
-    }
-    if(timeLeft < 10 * 60) 
-    {
-      $(".timer").css("color", "red");
-    }
-    const timer = setInterval(() => {
-      setTimeLeft((prevTime) => prevTime - 1);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [timeLeft]);
+  const starting_page = () => (
+    <div className="start-page">
+      <h1>Welcome to the Test</h1>
+      <h2>Assessment Details</h2>
+      <ul>
+        <li>
+          <strong>Exam Name:</strong> {test.name}
+        </li>
+        <li>
+          <strong>Duration:</strong> {Math.floor(test.time_duration / 60)}{" "}
+          minutes
+        </li>
+        <li>
+          <strong>Total Questions:</strong> {test.questions.length}
+        </li>
+        <li>
+          <strong>Maximum Marks:</strong> {test.questions.length}
+        </li>
+        <li>
+          <strong>Marking Scheme:</strong> +1 for correct, 0 for
+          incorrect/unattempted
+        </li>
+      </ul>
+      <h2>Assessment Instructions</h2>
+      <ol>
+        <li>Each question has four options, only one is correct.</li>
+        <li>
+          Click on an option to select your answer. Click again to unselect.
+        </li>
+        <li>
+          You can navigate between questions using the "Prev" and "Next"
+          buttons.
+        </li>
+        <li>Use "Mark for review" to flag questions for later review.</li>
+        <li>Unattempted questions will not fetch any marks.</li>
+        <li>
+          Once you click "Submit", your answers will be locked and evaluated.
+        </li>
+        <li>Do not refresh or close the browser tab during the test.</li>
+        <li>
+          Time left is shown at the top. The test will auto-submit when time
+          runs out.
+        </li>
+        <li>
+          Text selection and clipboard actions are disabled during the test.
+        </li>
+      </ol>
+      <button onClick={() => setStarted(true)}>Start Test</button>
+    </div>
+  );
 
   const handlesubmit = () => {
     const userAnswers = questions.map((question) => question.chosenOption);
@@ -58,31 +91,68 @@ function Test() {
     setSubmitted(true);
   };
 
+  useEffect(() => {
+    if (!started || submitted) return;
+
+    if (timeLeft === 0) {
+      handlesubmit();
+      return;
+    }
+    if (timeLeft < 10 * 60) {
+      $(".timer").css("color", "red");
+    }
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => prevTime - 1);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [started, handlesubmit]);
+
   const resultDisplay = (
     <div className="result">
       <div style={{ display: "flex", justifyContent: "space-around" }}>
-      <div style={{ color: "black" }}>
-        <h2>Results</h2>
-        <p>
-          Scored{"  "}: {result.score} / {result.total}
-        </p>
-        <p>Correct answers{"  "}: {result.correct}</p>
-        <p>Incorrect answers{"  "}: {result.incorrect}</p>
-        <p>Unattempted questions{"  "}: {result.unattempted}</p>
-      </div>
-       <PieChart
-      series={[
-        {
-          data: [
-            { id: 0, value: result.correct, label: 'Correct', color: 'rgba(77, 190, 54, 0.8)' },
-            { id: 1, value: result.incorrect, label: 'Incorrect', color: 'rgba(232, 24, 24, 0.8)' },
-            { id: 2, value: result.unattempted, label: 'Unattempted', color: 'rgba(255, 165, 0, 0.8)' },
-          ],
-        },
-      ]}
-      width={300}
-      height={300}
-    />
+        <div style={{ color: "black" }}>
+          <h2>Results</h2>
+          <p>
+            Scored{"  "}: {result.score} / {result.total}
+          </p>
+          <p>
+            Correct answers{"  "}: {result.correct}
+          </p>
+          <p>
+            Incorrect answers{"  "}: {result.incorrect}
+          </p>
+          <p>
+            Unattempted questions{"  "}: {result.unattempted}
+          </p>
+        </div>
+        <PieChart
+          series={[
+            {
+              data: [
+                {
+                  id: 0,
+                  value: result.correct,
+                  label: "Correct",
+                  color: "rgba(77, 190, 54, 0.8)",
+                },
+                {
+                  id: 1,
+                  value: result.incorrect,
+                  label: "Incorrect",
+                  color: "rgba(232, 24, 24, 0.8)",
+                },
+                {
+                  id: 2,
+                  value: result.unattempted,
+                  label: "Unattempted",
+                  color: "rgba(255, 165, 0, 0.8)",
+                },
+              ],
+            },
+          ]}
+          width={300}
+          height={300}
+        />
       </div>
       {questions.map((question, index) => (
         <div className="question" key={question.qno}>
@@ -118,15 +188,12 @@ function Test() {
     </div>
   );
 
-  return (
-    <>
-      <Navbar />
-      {submitted ? (
-        resultDisplay
-      ) : (
+  const testpage = () => {
+    return (
+      <div>
         <div>
           <div className="timer">
-            Time left : {" "}
+            Time left :{" "}
             {`${Math.floor(timeLeft / 60)
               .toString()
               .padStart(2, "0")}:${(timeLeft % 60)
@@ -147,7 +214,18 @@ function Test() {
             setCurrent={setCurrent}
           />
         </div>
-      )}
+      </div>
+    );
+  };
+
+  return (
+    <>
+      <Navbar />
+      {started === false
+        ? starting_page()
+        : submitted
+        ? resultDisplay
+        : testpage()}
     </>
   );
 }
