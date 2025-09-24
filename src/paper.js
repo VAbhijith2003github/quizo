@@ -4126,6 +4126,8 @@ const answerKey = [
 const test = {
   Id: 1,
   name: "NTA UGC NET sample paper 1",
+  qid : "NTAUGCNET1",
+  attempted: false,
   questions: initialQuestions,
   answerKey: answerKey,
   time_stamp: null,

@@ -1,0 +1,30 @@
+.homepage-container {
+  max-width: 600px;
+  height: fit-content;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.homepage-title {
+  color: #1976d2;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.homepage-desc {
+  font-size: 1.12em;
+  margin-bottom: 18px;
+}
+
+.homepage-highlight {
+  font-weight: 600;
+  color: #388e3c;
+  font-size: 1.13em;
+}

@@ -1,0 +1,73 @@
+.tests-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 32px;
+  background: #f9f9fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.tests-title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1976d2;
+}
+
+.tests-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tests-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e3eafc;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.06);
+}
+
+.test-name {
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
+.test-status {
+  font-size: 1em;
+  font-weight: 600;
+  margin-right: 18px;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.test-status.ready {
+  background: #c8e6c9;
+  color: #388e3c;
+}
+
+.test-status.analysis {
+  background: #ffe0b2;
+  color: #f57c00;
+}
+
+.test-action {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.test-action:hover {
+  background: #1565c0;
+}

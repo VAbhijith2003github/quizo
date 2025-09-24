@@ -63,6 +63,9 @@ function Test() {
         <li>
           Text selection and clipboard actions are disabled during the test.
         </li>
+        <li>
+          maximize your browser window <strong>( press F11 )</strong>.
+        </li>
       </ol>
       <button onClick={() => setStarted(true)}>Start Test</button>
     </div>
