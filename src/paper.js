@@ -1137,28 +1137,29 @@ const initialQuestions = [
   },
   {
     qno: 47,
-    question: "The sentence \"The President could not ratify the treaty\" can be labelled as:\n(a) [The President]_NP [could]_M [not ratify the treaty]_VP\n(b) [The]_Det [President could]_NP [not ratify the treaty]_VP\n(c) [The President could]_NP [not]_NEG [ratify the treaty]_VP\n(d) [The President]_NP [could not]_M [ratify the treaty]_VP\n(e) [The President could not ratify]_NP [the treaty]_VP\nChoose the correct answer from the options given below:",
+    question:
+      'The sentence "The President could not ratify the treaty" can be labelled as:\n(a) [The President]_NP [could]_M [not ratify the treaty]_VP\n(b) [The]_Det [President could]_NP [not ratify the treaty]_VP\n(c) [The President could]_NP [not]_NEG [ratify the treaty]_VP\n(d) [The President]_NP [could not]_M [ratify the treaty]_VP\n(e) [The President could not ratify]_NP [the treaty]_VP\nChoose the correct answer from the options given below:',
     options: [
-        {
-            key: "A",
-            value: "(b) and (e) only"
-        },
-        {
-            key: "B",
-            value: "(b) and (c) only"
-        },
-        {
-            key: "C",
-            value: "(a) and (d) only"
-        },
-        {
-            key: "D",
-            value: "(c) and (d) only"
-        }
+      {
+        key: "A",
+        value: "(b) and (e) only",
+      },
+      {
+        key: "B",
+        value: "(b) and (c) only",
+      },
+      {
+        key: "C",
+        value: "(a) and (d) only",
+      },
+      {
+        key: "D",
+        value: "(c) and (d) only",
+      },
     ],
     chosenOption: null,
-    statusOfQuestion: "unopened"
-},
+    statusOfQuestion: "unopened",
+  },
   {
     qno: 48,
     question:
@@ -1287,7 +1288,7 @@ const initialQuestions = [
   {
     qno: 53,
     question:
-      'Identify the correct pair of authors who authored the book "The theory and practice of translation".',
+      'Identify the correct pair of authors who authored the book "The theory and practice of translation".\n(a) C. Taber\n(b) J. Beekman\n(c) E.A. Nida\n(d) W. Zydatiss\n(e) M. Baker\nChoose the correct answer from the options given below:',
     options: [
       {
         key: "A",
