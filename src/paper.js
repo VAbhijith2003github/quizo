@@ -988,7 +988,7 @@ const initialQuestions = [
   {
     qno: 41,
     question:
-      '"The market boomed\' after the resurgence". In this sentence the word "boomed" is',
+      '"The market boomed\' after the resurgence". In this sentence the word "boomed" is\n(a) Primary Onomatopoeia\n(b) Secondary Onomatopoeia\n(c) Ideophone\n(d) Sound symbolic expression\n(e) Both ideophone and onomatopoeia\nChoose the correct answer from the options given below:',
     options: [
       {
         key: "A",
@@ -1013,7 +1013,7 @@ const initialQuestions = [
   {
     qno: 42,
     question:
-      "In the pre-machine learning phase of Artificial Intelligence (AI), which of the following programming languages were popularly used",
+      "In the pre-machine learning phase of Artificial Intelligence (AI), which of the following programming languages were popularly used\n(a) Java\n(b) Visual Basic\n(c) Prolog\n(d) Lisp\n(e) Perl\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1037,7 +1037,8 @@ const initialQuestions = [
   },
   {
     qno: 43,
-    question: "Language revitalization involves",
+    question:
+      "Language revitalization involves\n(a) Community mobilization\n(b) Linguistic landscaping\n(c) Language documentation\n(d) Knowledge text generation\n(e) Language standardization\nChoose the most appropriate answer from the options given belov:",
     options: [
       {
         key: "A",
@@ -1062,7 +1063,7 @@ const initialQuestions = [
   {
     qno: 44,
     question:
-      "Some of the demographic variables considered in sociolinguistic studies include",
+      "Some of the demographic variables considered in sociolinguistic studies include\n(a) Age\n(b) Migration\n(c) Gender\n(d) Field\n(e) Tenor\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1087,7 +1088,7 @@ const initialQuestions = [
   {
     qno: 45,
     question:
-      "In Generative Phonology Paul Kiparsky introduced two ordering relations. They are",
+      "In Generative Phonology Paul Kiparsky introduced two ordering relations. They are\n(a) Underlying order\n(b) Feeding order\n(c) Bleeding order\n(d) Endocentric order\n(e) Co-ordinate order\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1111,7 +1112,8 @@ const initialQuestions = [
   },
   {
     qno: 46,
-    question: "Important rubrics of 'SPEAKING' are",
+    question:
+      "Important rubrics of 'SPEAKING' are\n(a) Gender\n(b) Community\n(c) Setting\n(d) Motivation\n(e) End\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1135,33 +1137,32 @@ const initialQuestions = [
   },
   {
     qno: 47,
-    question:
-      'The sentence "The President could not ratify the treaty" can be labelled as',
+    question: "The sentence \"The President could not ratify the treaty\" can be labelled as:\n(a) [The President]_NP [could]_M [not ratify the treaty]_VP\n(b) [The]_Det [President could]_NP [not ratify the treaty]_VP\n(c) [The President could]_NP [not]_NEG [ratify the treaty]_VP\n(d) [The President]_NP [could not]_M [ratify the treaty]_VP\n(e) [The President could not ratify]_NP [the treaty]_VP\nChoose the correct answer from the options given below:",
     options: [
-      {
-        key: "A",
-        value: "(b) and (e) only",
-      },
-      {
-        key: "B",
-        value: "(b) and (c) only",
-      },
-      {
-        key: "C",
-        value: "(a) and (d) only",
-      },
-      {
-        key: "D",
-        value: "(c) and (d) only",
-      },
+        {
+            key: "A",
+            value: "(b) and (e) only"
+        },
+        {
+            key: "B",
+            value: "(b) and (c) only"
+        },
+        {
+            key: "C",
+            value: "(a) and (d) only"
+        },
+        {
+            key: "D",
+            value: "(c) and (d) only"
+        }
     ],
     chosenOption: null,
-    statusOfQuestion: "unopened",
-  },
+    statusOfQuestion: "unopened"
+},
   {
     qno: 48,
     question:
-      "Proto Indo European (PIE) related excavations at Catal Huyuk in Turkey by James Mellart have found evidences of",
+      "Proto Indo European (PIE) related excavations at Catal Huyuk in Turkey by James Mellart have found evidences of\n(a) Hunting\n(b) Fertility rites\n(c) Mud bricks\n(d) Trade\n(e) Marriage ceremony\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1186,7 +1187,7 @@ const initialQuestions = [
   {
     qno: 49,
     question:
-      "Difference between a dialect and a language is generally made on the grounds of",
+      "Difference between a dialect and a language is generally made on the grounds of\n(a) Individual choice and community preferences\n(b) Lexical database and phonological properties\n(c) Socio-graphical location and linguistic features\n(d) Public opinions and administrative decisions\n(e) Historical records and ethnographic evidence\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1211,7 +1212,7 @@ const initialQuestions = [
   {
     qno: 50,
     question:
-      "Paul Grice outlined four key categories or maxims of conversation. These are:",
+      "Paul Grice outlined four key categories or maxims of conversation. These are:\n(a) Spatiality and dimension\n(b) Quality and quantity\n(c) Cohesion and coherence\n(d) Relation and manner\n(e) Information and representation\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1236,7 +1237,7 @@ const initialQuestions = [
   {
     qno: 51,
     question:
-      "Metaphor is essentially a relation between two conceptual domains. These domains are",
+      "Metaphor is essentially a relation between two conceptual domains. These domains are\n(a) Source domain\n(b) Target domain\n(c) Social domain\n(d) Cultural domain\n(e) Discourse domain\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1261,7 +1262,7 @@ const initialQuestions = [
   {
     qno: 52,
     question:
-      "Two of the following words belong to the category of 'function word'. They are",
+      "Two of the following words belong to the category of 'function word'. They are\n(a) Universe\n(b) And.\n(c) Green\n(d) Write\n(e) After\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1310,7 +1311,8 @@ const initialQuestions = [
   },
   {
     qno: 54,
-    question: "Read the following statements:",
+    question:
+      "Read the following statements:\n(a) FUG is Function Unification Grammar\n(b) HPSG is Head-driven Phrase Structure Grammar\n(c) GPSG is German Phrase Structure Grammar\n(d) LFG is Lexicalist Function Grammar\n(e) TAG is Tree Attributive Grammar\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1335,7 +1337,7 @@ const initialQuestions = [
   {
     qno: 55,
     question:
-      "Binary semantic features are those which come naturally in pairs.",
+      "Binary semantic features are those which come naturally in pairs.\n(a) [male] and [female]\n(b) [animate] and [inanimate]\n(c) [white] and [gray]\n(d) [slow] and [static]\n(e) [noon] and [afternoon]\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1359,7 +1361,8 @@ const initialQuestions = [
   },
   {
     qno: 56,
-    question: "The English word 'cook' can be an example of the following:",
+    question:
+      "The English word 'cook' can be an example of the following:\n(a) A noun\n(b) An adjective\n(c) An adverb\n(d) A verb\n(e) A postposition\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1383,7 +1386,8 @@ const initialQuestions = [
   },
   {
     qno: 57,
-    question: "Identify the cases from the options given below:",
+    question:
+      "Identify the cases from the options given below:\n(a) Ablative\n(b) Active\n(c) Affirmative\n(d) Applicative\n(e) Accusative\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1408,7 +1412,7 @@ const initialQuestions = [
   {
     qno: 58,
     question:
-      "The politeness principles, according to Leech, are formulated with the following maxims",
+      "The politeness principles, according to Leech, are formulated with the following maxims\n(a) Setting, situation, participants\n(b) Interaction, mediation, attachment\n(c) Tact, generosity, approbation\n(d) Modesty, agreement, sympathy\n(e) Involvement, relation, solidarity\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1432,7 +1436,8 @@ const initialQuestions = [
   },
   {
     qno: 59,
-    question: "Two notable dichotomies proposed by F.de. Saussure are",
+    question:
+      "Two notable dichotomies proposed by F.de. Saussure are\n(a) Etic and Emic function\n(b) Langue and Parole\n(c) Split and Merger\n(d) Syntagmatic and Paradigmatic relations\n(e) Speech repertoire and Verbal repertoire\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1456,7 +1461,8 @@ const initialQuestions = [
   },
   {
     qno: 60,
-    question: "Which of the following statements are true about dialect?",
+    question:
+      "Which of the following statements are true about dialect?\n(a) Dialects have no grammatical rules\n(b) Dialects cannot be written down\n(c) Dialects are mutually intelligible forms of a language\n(d) Dialects of a language differ from each other in a systematic way\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1480,7 +1486,8 @@ const initialQuestions = [
   },
   {
     qno: 61,
-    question: "A bidirectional bilingual Machine Translation system works for",
+    question:
+      "A bidirectional bilingual Machine Translation system works for\n(a) Target language\n(b) Source language\n(c) Multiple languages\n(d) Selected language\n(e) Scheduled languages\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1505,7 +1512,7 @@ const initialQuestions = [
   {
     qno: 62,
     question:
-      "As per the Census 2011 report of the Government of India which of the following non-scheduled languages are not listed in Part-B",
+      "As per the Census 2011 report of the Government of India which of the following non-scheduled languages are not listed in Part-B\n(a) Dimasa\n(b) Garo\n(c) Kabui\n(d) Bangani\n(e) Kurux\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1530,7 +1537,7 @@ const initialQuestions = [
   {
     qno: 63,
     question:
-      "What are the typical areal features characteristic of Indian language families?",
+      "What are the typical areal features characteristic of Indian language families?\n(a) Retroflexion\n(b) Prepositions\n(c) SVO word order\n(d) Reduplication\n(e) Echo words\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1555,11 +1562,11 @@ const initialQuestions = [
   {
     qno: 64,
     question:
-      "For language acquisition to occur which of the following are needed?",
+      "For language acquisition to occur which of the following are needed?\n(a) Only input and innate capacity\n(b) Input\n(c) Interaction\n(d) Neither input nor interaction\n(e) Only innate capacity but no input\nChoose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(c) and (e) only",
+        value: "(b) and (c) only",
       },
       {
         key: "B",
@@ -1579,7 +1586,8 @@ const initialQuestions = [
   },
   {
     qno: 65,
-    question: "Which of the following holds true for phrase structure?",
+    question:
+      "Which of the following holds true for phrase structure?\n(a) A.c-commands B if and only if the first branching node which dominates A dominates B\n(b) A c-commands B if and only if another node C c-commands B\n(c) A c-commands B if and only if both A and B belong to different branching nodes\n(d) A c-commands B if and only if both belong to the same branching node\n(e) A cannot c-command B under any condition\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1603,23 +1611,24 @@ const initialQuestions = [
   },
   {
     qno: 66,
-    question: "Match List-I with List-II: Exponents with Theory",
+    question:
+      "Match List-I with List-II:\nList-I (Exponents) | List-II (Theory)\n(a) Bhartrhari | I. Apohavada\n(b) Dinnaga | II. Sphotavada\n(c) Kumarilabhatta | III. Anvitabhidhana vada\n(d) Prabhakara Misra | IV. Abhihitanvayavada\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(a)-I, (b)-II, (c)-IV, (d)-III",
+        value: "(a)-II, (b)-I, (c)-III, (d)-IV",
       },
       {
         key: "B",
-        value: "(a)-IV, (b)-I, (c)-III, (d)-II",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
       {
         key: "C",
-        value: "(a)-IV, (b)-I, (c)-II, (d)-III",
+        value: "(a)-III, (b)-I, (c)-II, (d)-IV",
       },
       {
         key: "D",
-        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
+        value: "(a)-IV, (b)-III, (c)-II, (d)-I",
       },
     ],
     chosenOption: null,
@@ -1627,7 +1636,8 @@ const initialQuestions = [
   },
   {
     qno: 67,
-    question: "Match List-1 with List-II: Author with Name of the Article",
+    question:
+      "Match List-1 with List-II:\nList-I (Name of the Article) | List-II (Author)\nI. Morphology and Logical form | (a) L. Bloomfield\nII. From morpheme to phonemics | (b) M. Halle\nIII. Menomini Morpho-phonemics | (c) Z.S. Harris\nIV. Prolegomena to a theory of word formation | (d) D. Pesetsky\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1639,7 +1649,7 @@ const initialQuestions = [
       },
       {
         key: "C",
-        value: "(a)-I, (b)-II, (c)-III, (d)-IV",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
       {
         key: "D",
@@ -1652,15 +1662,15 @@ const initialQuestions = [
   {
     qno: 68,
     question:
-      "Match List-I with List-II: Sociolinguistic Studies with Author(s)",
+      "Match List-I with List-II:\nList-I (Sociolinguistic Studies) | List-II (Author(s))\n(a) The social differentiation of English in Norwich | I. William Labov\n(b) The interplay of social and linguistic factors in Panama | II. James Milroy and Lesely Milroy\n(c) The social stratification of English in New York City | III. Peter Trudgill\n(d) Belfast: Change and variation in an urban vernacular | IV. Henrietta Cedergren\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: " (a)-III, (b)-IV, (c)-I, (d)-II",
+        value: "(a)-III, (b)-IV, (c)-I, (d)-II",
       },
       {
         key: "B",
-        value: "(a)-III, (b)-IV, (c)-I, (d)-II",
+        value: "(a)-IV, (b)-I, (c)-II, (d)-III",
       },
       {
         key: "C",
@@ -1668,7 +1678,7 @@ const initialQuestions = [
       },
       {
         key: "D",
-        value: "(a)-IV, (b)-I, (c)-II, (d)-III",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
     ],
     chosenOption: null,
@@ -1676,23 +1686,24 @@ const initialQuestions = [
   },
   {
     qno: 69,
-    question: "Match List-I with List-II: Language Types with Language",
+    question:
+      "Match List-I with List-II:\nList-I (Language Types) | List-II (Language)\n(a) Isolating language | I. Turkish\n(b) Agglutinating language | II. Inuktitut\n(c) Inflectional language | III. Vietnamese\n(d) Polysynthetic language | IV. Sanskrit\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "A. (a)-II, (b)-IV, (c)-I, (d)-III",
+        value: "(a)-III, (b)-I, (c)-IV, (d)-II",
       },
       {
         key: "B",
-        value: "B. (a)-III, (b)-I, (c)-II, (d)-IV",
+        value: "(a)-II, (b)-IV, (c)-III, (d)-I",
       },
       {
         key: "C",
-        value: "C. (a)-III, (b)-I, (c)-IV, (d)-II",
+        value: "(a)-III, (b)-IV, (c)-I, (d)-II",
       },
       {
         key: "D",
-        value: "D. (a)-IV, (b)-I, (c)-III, (d)-II",
+        value: "(a)-IV, (b)-III, (c)-I, (d)-II",
       },
     ],
     chosenOption: null,
@@ -1700,23 +1711,24 @@ const initialQuestions = [
   },
   {
     qno: 70,
-    question: "Match List-I with List-II: Books with Author",
+    question:
+      "Match List-I with List-II:\nList-I (Books) | List-II (Author)\n(a) The rise and fall of languages | I. J. Fishman\n(b) Dying words: Endangered languages, and what they have to tell us | II. P. Austin\n(c) Can threatened languages be saved? | III. N. Evans\n(d) One thousand languages: Living, Endangered and lost | IV. R.M.W. Dixon\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(a)-IV, (b)-III, (c)-I, (d)-II",
+        value: "(a)-II, (b)-IV, (c)-I, (d)-III",
       },
       {
         key: "B",
-        value: "(a)-I, (b)-III, (c)-II, (d)-IV",
+        value: "(a)-III, (b)-IV, (c)-I, (d)-II",
       },
       {
         key: "C",
-        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
+        value: "(a)-III, (b)-I, (c)-IV, (d)-II",
       },
       {
         key: "D",
-        value: "(a)-I, (b)-I, (c)-III, (d)-IV",
+        value: "(a)-II, (b)-I, (c)-III, (d)-IV",
       },
     ],
     chosenOption: null,
@@ -1724,23 +1736,24 @@ const initialQuestions = [
   },
   {
     qno: 71,
-    question: "Match List-I with List-II: Vowels with Description",
+    question:
+      "Match List-I with List-II:\nList-I (Vowels) | List-II (Description)\nI. high, back, rounded | (a) heat\nII. high, front, unrounded | (b) sue\nIII. low, back, unrounded | (c) boat\nIV. mid, back, rounded | (d) cot\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(I)-(b), (II)-(a), (III)-(d), (IV)-(c)",
+        value: "(a)-II, (b)-IV, (c)-III, (d)-I",
       },
       {
         key: "B",
-        value: "(I)-(c), (II)-(a), (III)-(b), (IV)-(d)",
+        value: "(a)-IV, (b)-III, (c)-I, (d)-II",
       },
       {
         key: "C",
-        value: "(I)-(d), (II)-(c), (III)-(b), (IV)-(a)",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
       {
         key: "D",
-        value: "(I)-(b), (II)-(d), (III)-(a), (IV)-(c)",
+        value: "(a)-I, (b)-II, (c)-IV, (d)-III",
       },
     ],
     chosenOption: null,
@@ -1749,7 +1762,7 @@ const initialQuestions = [
   {
     qno: 72,
     question:
-      "Match List- with List-II: Types of annotations and the definitions.",
+      "Match List-I with List-II: Types of annotations and the definitions.\nList-I (Types of annotations) | List-II (Definition of annotation)\n(a) Part of speech annotation | I. Tagging characters in a text\n(b) Word sense annotation | II. Tagging sentences in a text\n(c) Syntactic annotation | III. Tagging word meaning in a text\n(d) Orthographic annotation | IV. Tagging part of speech of words\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1761,11 +1774,11 @@ const initialQuestions = [
       },
       {
         key: "C",
-        value: "(a)-IV, (b)-I, (c)-IV, (d)-III",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
       {
         key: "D",
-        value: "(a)-I, (b)-I, (c)-III, (d)-IV",
+        value: "(a)-I, (b)-II, (c)-III, (d)-IV",
       },
     ],
     chosenOption: null,
@@ -1773,7 +1786,8 @@ const initialQuestions = [
   },
   {
     qno: 73,
-    question: "Match List-I with List-II: IPA Symbols with Description",
+    question:
+      "Match List-I with List-II:\nList-I (IPA Symbols) | List-II (Description)\n(a) ʔ | I. Retroflex nasal\n(b) x | II. Glottal stop\n(c) ŋ | III. Voiced palatal stop\n(d) ʈ | IV. Voiceless velar fricative\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1781,15 +1795,15 @@ const initialQuestions = [
       },
       {
         key: "B",
-        value: "(a)-IV, (b)-III, (c)-I, (d)-II",
+        value: "(a)-II, (b)-IV, (c)-III, (d)-I",
       },
       {
         key: "C",
-        value: "(a)-III, (b)-IV, (c)-I, (d)-II",
+        value: "(a)-IV, (b)-II, (c)-III, (d)-I",
       },
       {
         key: "D",
-        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
+        value: "(a)-III, (b)-I, (c)-IV, (d)-II",
       },
     ],
     chosenOption: null,
@@ -1797,19 +1811,20 @@ const initialQuestions = [
   },
   {
     qno: 74,
-    question: "Match List-I with List-II: Languages with Families",
+    question:
+      "Match List-I with List-II:\nList-I (Languages) | List-II (Families)\n(a) Khasi | I. Dravidian\n(b) Irula | II. Austro Asiatic\n(c) Bangani | III. Tibeto Burman\n(d) Memba | IV. Indo Aryan\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(d)-III, (c)-IV, (b)-I, (a)-II",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
       {
         key: "B",
-        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
+        value: "(a)-II, (b)-I, (c)-III, (d)-IV",
       },
       {
         key: "C",
-        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
+        value: "(a)-III, (b)-I, (c)-IV, (d)-II",
       },
       {
         key: "D",
@@ -1822,19 +1837,19 @@ const initialQuestions = [
   {
     qno: 75,
     question:
-      "Match List-I with List-II: Formal Grammars with Types in Chomsky Hierarchy",
+      "Match List-I with List-II:\nList-I (Formal Grammars) | List-II (Types in Chomsky Hierarchy)\n(a) UPSG | I. 3\n(b) CSG | II. 2\n(c) CFG | III. 1\n(d) RG | IV. 0\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(a)-I, (b)-II, (c)-III, (d)-IV",
+        value: "(a)-IV, (b)-III, (c)-II, (d)-I",
       },
       {
         key: "B",
-        value: "(a)-IV, (b)-I, (c)-II, (d)-III",
+        value: "(a)-I, (b)-II, (c)-III, (d)-IV",
       },
       {
         key: "C",
-        value: "(a)-I, (b)-II, (c)-III, (d)-IV",
+        value: "(a)-II, (b)-I, (c)-IV, (d)-III",
       },
       {
         key: "D",
@@ -1847,7 +1862,7 @@ const initialQuestions = [
   {
     qno: 76,
     question:
-      "Arrange the places of articulation of consonants in correct sequential order from front to back",
+      "Arrange the places of articulation of consonants in correct sequential order from front to back\n(a) Glottal\n(b) Palatal\n(c) Labial\n(d) Velar\n(e) Dental\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1872,11 +1887,11 @@ const initialQuestions = [
   {
     qno: 77,
     question:
-      "Arrange the nasal segments in a sequential order: (front to back direction in place of articulation)",
+      "Arrange the nasal segments in a sequential order: (front to back direction in place of articulation)\n(a) Palatal nasal\n(b) Velar nasal\n(c) Dental nasal\n(d) Bilabial nasal\n(e) Retroflex nasal\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(c) (e), (b), (d), (a)",
+        value: "(c), (e), (b), (d), (a)",
       },
       {
         key: "B",
@@ -1897,7 +1912,7 @@ const initialQuestions = [
   {
     qno: 78,
     question:
-      "Arrange the levels of representation of concepts in cognitive linguistic framework",
+      "Arrange the levels of representation of concepts in cognitive linguistic framework\n(a) Conception\n(b) Linguistic meaning\n(c) Form\n(d) The world 'out there'\n(e) Perception\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -1922,23 +1937,23 @@ const initialQuestions = [
   {
     qno: 79,
     question:
-      "Arrange the following based on the chronology of diagnostics with regard to language endangerment.",
+      "Arrange the following based on the chronology of diagnostics with regard to language endangerment.\n(a) Evaluative system of the ethnologue for language vitality\n(b) Fishman's GIDS model\n(c) Factors of vitality and endangerment proposed by UNESCO\n(d) Ethnologue's EGIDS\n(e) Landweer's indicators of ethnolinguistic vitality\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(b), (c), (a), (d)",
+        value: "(c), (b), (e), (a), (d)",
       },
       {
         key: "B",
-        value: "(b), (e), (d), (c)",
+        value: "(a), (e), (d), (b), (c)",
       },
       {
         key: "C",
-        value: "(d), (c), (a), (b)",
+        value: "(b), (e), (a), (c), (d)",
       },
       {
         key: "D",
-        value: "(d), (b), (c), (a)",
+        value: "(d), (c), (b), (a), (e)",
       },
     ],
     chosenOption: null,
@@ -1947,23 +1962,23 @@ const initialQuestions = [
   {
     qno: 80,
     question:
-      "According to Paul Kiparsky’s Obligatory Contour Principle, which of the following sequences is possible in a word?",
+      "Organize in a sequential order Paul Kiparsky's conception of how the English lexicon is organised\n(a) Laxing\n(b) Compound stress\n(c) Stress, shortening\n(d) Post lexical phonology\n(e) Underived lexical entries\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "b. (a) and (d) only",
+        value: "(e), (d), (c), (b), (a)",
       },
       {
         key: "B",
-        value: "(a) and (b) only",
+        value: "(e), (c), (b), (a), (d)",
       },
       {
         key: "C",
-        value: "(c) and (d) only",
+        value: "(a), (d), (b), (c), (e)",
       },
       {
         key: "D",
-        value: " (b) and (c) only",
+        value: "(a), (b), (c), (e), (d)",
       },
     ],
     chosenOption: null,
@@ -1972,23 +1987,23 @@ const initialQuestions = [
   {
     qno: 81,
     question:
-      "Organize in a sequential order Paul Kiparsky's conception of how the English lexicon is organized",
+      "Identify the correct order based on the chronology of books published (first edition).\n(a) In other words: A coursebook on translation (M. Baker)\n(b) A linguistic theory of translation (J.C. Catford)\n(c) Linguistics and the language of translation (K. Malmkjaer)\n(d) The art of translation (T. Savory)\n(e) A textbook of translation (P. Newmark)\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(d), (b), (c), (a)",
+        value: "(e), (a), (d), (c), (b)",
       },
       {
         key: "B",
-        value: "(c), (d), (a), (b)",
+        value: "(d), (b), (e), (a), (c)",
       },
       {
         key: "C",
-        value: "(a), (c), (d), (b)",
+        value: "(c), (e), (b), (d), (a)",
       },
       {
         key: "D",
-        value: "(b), (d), (c), (a)",
+        value: "(b), (a), (d), (e), (c)",
       },
     ],
     chosenOption: null,
@@ -1997,23 +2012,23 @@ const initialQuestions = [
   {
     qno: 82,
     question:
-      "Arrange the following concepts in sequential order (focal-fugali)",
+      "Arrange the following concepts in sequential order (centrifugal)\n(a) Focal context\n(b) Global context\n(c) Local context\n(d) Social context\n(e) Topical context\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(a), (d), (c), (e)",
+        value: "(a), (c), (d), (b), (e)",
       },
       {
         key: "B",
-        value: "(b), (a), (c), (e)",
+        value: "(b), (a), (d), (e), (c)",
       },
       {
         key: "C",
-        value: "(c), (d), (b), (e)",
+        value: "(c), (a), (e), (d), (b)",
       },
       {
         key: "D",
-        value: "b), (a), (c), (e), (d)",
+        value: "(d), (b), (c), (e), (a)",
       },
     ],
     chosenOption: null,
@@ -2022,7 +2037,7 @@ const initialQuestions = [
   {
     qno: 83,
     question:
-      "Arrange the following stages in language acquisition in sequential order.",
+      "Arrange the following stages in language aquisition in sequential order\n(a) Semantic competence\n(b) Phonological competence\n(c) Communicative competence\n(d) Grammatical competence\n(e) Pragmatic competence\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -2030,11 +2045,11 @@ const initialQuestions = [
       },
       {
         key: "B",
-        value: "(b), (c), (d), (a), (e)",
+        value: "(c), (b), (d), (e), (a)",
       },
       {
         key: "C",
-        value: "(c), (d), (a), (e), (b)",
+        value: "(b), (d), (a), (e), (c)",
       },
       {
         key: "D",
@@ -2046,23 +2061,24 @@ const initialQuestions = [
   },
   {
     qno: 84,
-    question: "Arrange the following names in chronological order.",
+    question:
+      "Arrange the following names in chronological order.\n(a) George Wenker\n(b) Jules Gillieron\n(c) Alexander Ellis\n(d) Eugene Deith\n(e) William Labov\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(b), (a), (d), (c), (e)",
+        value: "(b), (a), (d), (e), (c)",
       },
       {
         key: "B",
-        value: "(b), (d), (e), (a), (c)",
+        value: "(a), (b), (c), (d), (e)",
       },
       {
         key: "C",
-        value: "(c), (d), (b), (a), (e)",
+        value: "(c), (b), (a), (e), (d)",
       },
       {
         key: "D",
-        value: "(d), (e), (c), (a), (b)",
+        value: "(d), (c), (a), (b), (e)",
       },
     ],
     chosenOption: null,
@@ -2071,23 +2087,23 @@ const initialQuestions = [
   {
     qno: 85,
     question:
-      "Arrange the following concepts in sequential order (focal-fugali)",
+      "Arrange the following concepts in sequential order.\n(a) Idiolect\n(b) Familylect\n(c) Sociolect\n(d) Dialect\n(e) Language\nChoose the correct answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "(a), (c), (e), (d)",
+        value: "(a), (b), (c), (d), (e)",
       },
       {
         key: "B",
-        value: "(b), (a), (c), (e)",
+        value: "(b), (c), (d), (a), (e)",
       },
       {
         key: "C",
-        value: "(c), (d), (b), (a)",
+        value: "(d). (c), (b), (a), (a)",
       },
       {
         key: "D",
-        value: "(d), (b), (a), (c)",
+        value: "(c), (b), (d), (e), (a)",
       },
     ],
     chosenOption: null,
@@ -2095,11 +2111,12 @@ const initialQuestions = [
   },
   {
     qno: 86,
-    question: "Given below are two statements:",
+    question:
+      "Given below are two statements:\nStatement (I): Noam Chomsky distinguishes two kinds of universals formal and substantive.\nStatement (II): Many of Greenberg's universals do not imply a typological analysis.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
-        value: "Both Statement (I) and Statement (II) are true",
+        value: "Both Statement (I) and Statement (II) are correct",
       },
       {
         key: "B",
@@ -2120,7 +2137,7 @@ const initialQuestions = [
   {
     qno: 87,
     question:
-      "Given below are two statements: One is labelled as Assertion (A) and the other is labelled as Reason (R).",
+      "Given below are two statements: One is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A): The process of voicing is phonologically conditioned.\nReason (R): The process of devoicing is semantically conditioned.\nIn the light of the above statements, choose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -2146,7 +2163,8 @@ const initialQuestions = [
   },
   {
     qno: 88,
-    question: "Given below are two statements:",
+    question:
+      "Given below are two statements: The SHRDLU System (Winograd 1972)\nStatement (I): Simulated a robot embedded in a world of toy blocks.\nStatement (II): Was an attempt to build a grammar of English and was able to parse N commands.\nIn the light of the above statements, choose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -2154,7 +2172,7 @@ const initialQuestions = [
       },
       {
         key: "B",
-        value: "Both Statement (I) and Statement (II) are incorrect",
+        value: "Both Statement (I) and Statement (II) are false",
       },
       {
         key: "C",
@@ -2171,7 +2189,7 @@ const initialQuestions = [
   {
     qno: 89,
     question:
-      "Which statements about aksarasamuna are in Panini's grammar is/are correct",
+      "Given below are two statements: Which statements about aksarasamam naya in Panini's grammar is/are correct.\nStatement (I): It has 14 sutras placed at the beginning of the grammar.\nStatement (II): It can be adapted for other languages.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
     options: [
       {
         key: "A",
@@ -2196,7 +2214,7 @@ const initialQuestions = [
   {
     qno: 90,
     question:
-      "Given below are two statements: One is labelled as Assertion (A) and the other is labelled as Reason (R).",
+      "Given below are two statements: One is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A): In translation both source and target language texts communicate the same message.\nReason (R): A language may contain expressions which refer to concepts that do not exist in another language.\nIn the light of the above statements, choose the correct answer from the options given below:",
     options: [
       {
         key: "A",
@@ -4126,7 +4144,7 @@ const answerKey = [
 const test = {
   Id: 1,
   name: "NTA UGC NET sample paper 1",
-  qid : "NTAUGCNET1",
+  qid: "NTAUGCNET1",
   attempted: false,
   questions: initialQuestions,
   answerKey: answerKey,
